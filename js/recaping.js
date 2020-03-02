@@ -7,15 +7,12 @@ const speak = function (name, age) {
 }
 speak("Alex", 30);
 
-
-
 // Arrow function practise
 // const cook = function(){
 //     return 'hello , world ';
 // }
 
-
-const cook = () =>  'hell world' ;
+const cook = () =>  'hello world' ;
 const result = cook();
 console.log(result);
 

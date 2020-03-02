@@ -28,10 +28,10 @@ let user = {
     login() {
         console.log('the user logged in ');
     },
-    logout() {
-        console.log('the user logged out');
+    logout(){
+        console.log('user logged out');
     },
-
+ 
     logBlog() {
         console.log(this.blogs);
         this.blogs.forEach(blog => {
@@ -41,6 +41,8 @@ let user = {
         console.log(this);
     }
 };
+
+
 
 console.log(this);
 console.log(user.logout());

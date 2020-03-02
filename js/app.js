@@ -1,9 +1,8 @@
-const addTodoForm = document.querySelector('.form-add');
-const ul = document.querySelector('.add-ul');
+const addTodoForm = document.querySelector('.form-add')
+const ul = document.querySelector('.add-ul')
 
-const templateAdd = (todo) => {
-
-    const html = `
+const templateAdd = todo => {
+  const html = `
     <li class="list-group-item list-border"> ${todo}
     <span class="">
         <div class="custom-control custom-checkbox checkbox-right">
@@ -12,30 +11,27 @@ const templateAdd = (todo) => {
         </div>
     </span>
     </li>
-    `;
-
-    ul.innerHTML += html;
-
+    `
+  ul.innerHTML += html
 }
 
+addTodoForm.addEventListener('submit', e => {
+  e.preventDefault()
 
-addTodoForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  const todo = addTodoForm.addTodo.value.trim()
+  if (todo.length) {
+    templateAdd(todo)
+    addTodoForm.reset()
+  }
 
-    const todo = addTodoForm.addTodo.value.trim();
-    if (todo.length) {
-        templateAdd(todo);
-        addTodoForm.reset();
-    }
+  // Set Localstorage
+  const todoItems = [
+    {
+      todos: todo,
+    },
+  ]
 
-    // Set Localstorage
-    const todoItems = [{
-        todos : todo
-    }]
-
-    localStorage.setItem('todos', JSON.stringify(todoItems));
-    const allTodos = localStorage.getItem('todos');
-    console.log(JSON.parse(allTodos));
-
-});
-
+  localStorage.setItem('todos', JSON.stringify(todoItems))
+  const allTodos = localStorage.getItem('todos')
+  console.log(JSON.parse(allTodos))
+})

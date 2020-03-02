@@ -7,21 +7,18 @@
 //     console.log('rejected', err);
 // });
 
-
 // Using Asyn and await
 const getTodo = async () => {
+  const apiURL = await fetch('json/home.json')
 
-    const apiURL = await fetch('json/home.json');
+  if (apiURL.status !== 200) {
+    throw new Error('Cannot fetch Data')
+  }
 
-    if (apiURL.status !== 200) {
-        throw new Error('Cannot fetch Data');
-    }
-
-    const resultOfApi = await apiURL.json();
-    return resultOfApi;
-
+  const resultOfApi = await apiURL.json()
+  return resultOfApi
 }
 
 getTodo()
-    .then(resultOfApi => console.log('resolved', resultOfApi))
-    .catch(err => console.log('rejected', err.message));
+  .then(resultOfApi => console.log('resolved', resultOfApi))
+  .catch(err => console.log('rejected', err.message))

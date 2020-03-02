@@ -17,6 +17,7 @@ console.log(title.previousSibling);
 
 
 
+
 // Chainig
 console.log(title.nextElementSibling.parentElement.children);
 

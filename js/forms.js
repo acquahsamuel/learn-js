@@ -16,10 +16,8 @@ forms.addEventListener('click' , (event) =>{
 const usernameCheck = "shaunp";
 const Pattern = /^[a-z]{6,}$/;
 
-
 // let matchingUsernameANdPattern = Pattern.test(usernameCheck);
 // console.log(matchingUsernameANdPattern);
-
 
 let result = usernameCheck.search(Pattern);
 if(result){

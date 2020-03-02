@@ -1,7 +1,6 @@
 // Object in javascript
 // Key value = association (pair)
 
-
 let users = {
     firstname : "James",
     lastname  : "Erico",
@@ -31,7 +30,6 @@ let users = {
         const firstname =  this.firstname;
         console.log(firstname);
     }
-
 };
 
 users.fulldetail();
@@ -43,7 +41,6 @@ users.blogpostprint();
 
 // Student object
 var Student = {
-
     first : "Janem",
     last  : "Philip",
     indexNumber : "UE20029917",
@@ -82,6 +79,9 @@ Student.allCourse();
 Student.studentName();
 Student.studentIndex();
 
+console.log(Student.first = 'Alex');
+console.log(Student.IsStudentRegisterd);
+console.log(Student);
 
 // Math Objects 
 const area = 8.2;

@@ -17,27 +17,26 @@ if(userScore >= highScore){
 
 let password = 'cat dog';
 if (password.length >= 6) {
-	if (password.indexOf(' ') === -1) {
-		console.log('Valid Password');
-	} else {
-		console.log('Password is long enough but cannot contain spaces !!');
-	}
+    if (password.indexOf(' ') === -1) {
+        console.log('Valid Password');
+    } else {
+        console.log('Password is long enough but cannot contain spaces !!');
+    }
 } else {
-	console.log('Your password is short');
+    console.log('Your password is short');
 }
 
 // Rewrite
 let password1 = 'cat dog';
 if (password1 >= 6) {
-	if (password1.indexOf('') !== -1) {
-		console.log('Password cannot include spaces');
-	} else {
-		console.log('Valid password !!');
-	}
+    if (password1.indexOf('') !== -1) {
+        console.log('Password cannot include spaces');
+    } else {
+        console.log('Valid password !!');
+    }
 } else {
-	console.log('Please password is short ');
+    console.log('Please password is short ');
 }
-
 
 
 /*
@@ -46,7 +45,7 @@ Switch Javascript
 */
 
 
-( 5 > 4) ?  console.log("True") : console.log("False");
+(5 > 4) ? console.log("True") : console.log("False");
 
 let status = 'offline'
 let color = status === 'offline' ? 'red' : 'green';

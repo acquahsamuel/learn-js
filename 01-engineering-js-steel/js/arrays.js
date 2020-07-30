@@ -58,35 +58,13 @@ console.log(animals.splice(1, 1, 'Herllo'))
 console.log(animals);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let secondIndexOf = function (s1, s2) {
     let firstIndex = s1.indexOf(s2);
     return s1.indexOf(s2, firstIndex + 1);
 }
 
 
-let animals = [
+let animal = [
     'shark',
     'salmon',
     'whale',

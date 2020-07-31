@@ -50,3 +50,14 @@ function averageChallenge(arrayValu){
     return total / arrayValu.length;
 }
 
+console.log(averageChallenge([0,50]));
+
+// Pangrams 
+function isPangram(sentence){
+   let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+   for(let char of alphabet){
+       console.log(char);
+   }
+}
+
+isPangram();

@@ -38,6 +38,15 @@ function isValidPassword(password, username) {
   return true
 }
 
-isValidPassword('89Fjj1nms', 'dogluvr')
+console.log(isValidPassword('89Fjj1nms', 'dogluvr'));
 
+
+// function array challenge 
+function averageChallenge(arrayValu){
+    let total = 0;
+    for(let eachArrayVal of arrayValu){
+         total +=  eachArrayVal;
+    }
+    return total / arrayValu.length;
+}
 

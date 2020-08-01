@@ -54,10 +54,21 @@ console.log(averageChallenge([0,50]));
 
 // Pangrams 
 function isPangram(sentence){
+  let lowerCase = sentence.toLowerCase();
    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
    for(let char of alphabet){
-       console.log(char);
+       if(lowerCase.indexOf(char) === -1){
+         return false
+       }
    }
+   return true;
 }
 
 isPangram();
+
+
+// Get Chard 
+
+function getChar(){
+  
+}

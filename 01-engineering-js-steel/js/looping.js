@@ -198,3 +198,4 @@ console.log(`Ken Jennings Total Earing : ${totalEarn}`);
 for(let k in [88, 99, 77, 66]){
     console.log(k);
 }
+

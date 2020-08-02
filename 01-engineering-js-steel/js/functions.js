@@ -1,4 +1,4 @@
-function square(num) {
+function square1(num) {
     return num * num
 }
 
@@ -6,7 +6,7 @@ function addition(x, y) {
     return x + y
 }
 
-let squareS = square(3)
+let squareS = square1(3)
 console.log(squareS)
 
 function isPurple(color) {
@@ -101,3 +101,114 @@ function getCard() {
 console.log(getCard());
 
 
+
+/* Scoping 
+let and const 
+
+but not var 
+*/
+
+function scoper(){
+    let name = "James";
+    let age = 10;
+    let color = "pink";
+
+}
+scoper();
+
+
+
+// Always use let and const not var(again)
+// Scoping for let
+function doubleArray(arr){
+    const result = [];
+
+    for(i = 0; i < arr.length; i++){
+        let double = arr[i] * 2;
+        result.push(double);
+    }
+     return result;
+}
+
+
+// Lexical Scoping
+
+function outer(){
+    let movie = 'Amadeus';
+
+    function inner(){
+        let movie = 'The shinning';
+        console.log(movie.toUpperCase());
+    }
+    inner();
+}
+
+outer();
+
+
+// function expression (annoymus function)
+function add(x , y){
+    return x + y;
+}
+
+let sums = function(x , y){
+    return x + y;
+}
+
+const product = function multiply(x , y){
+    return x * y;
+}
+
+
+
+// function as objects
+function add1(x,y){
+    return x + y;
+}
+
+function sub1(x,y){
+    return x-y;
+}
+
+function mult1(x,y){
+    return x * y;
+}
+
+function div1(x,y){
+ return x / y;
+}
+
+const operation = [add1, sub1, mult1, div1];
+
+for(let fun of operation){
+    let result = fun(2,3);
+    console.log(result);
+}
+
+function rage(){
+    console.log('I have eiids');
+}
+
+function  cry(){
+    console.log('Boo hoo coding for fun');
+}
+
+
+function repeatNTimes(action , num){
+    for(let i = 0 ; i < num; i++){
+        action();
+    }
+}
+
+repeatNTimes(cry, 13);
+
+
+// Randomly Select function 
+function pickOne(f1, f2){
+    let rand = Math.random();
+    if(rand  < 0.5){
+        f1();
+    }else{
+        f2();
+    }
+}

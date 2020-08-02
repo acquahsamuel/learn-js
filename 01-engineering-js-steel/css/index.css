@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    font-size: medium;
+}
+
+.container {
+    width: 100%;
+}
+
+.side-one {
+    display: inline-block;
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+}
+
+.side-two {
+    display: inline-block;
+    background-color: rgb(206, 15, 15);
+    width: 50%;
+    height: 100vh;
+}

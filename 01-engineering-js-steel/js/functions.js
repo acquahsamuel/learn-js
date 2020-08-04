@@ -212,3 +212,12 @@ function pickOne(f1, f2){
         f2();
     }
 }
+
+//function as return values 
+function multiplyer(num){
+    return function (x){
+        return x * num;
+    }
+}
+
+const triple = multiplyer(3);

@@ -227,37 +227,76 @@ const desSort = prices.slice().sort((a, b) => {
 
 console.log(badSort, ascSort, desSort);
 
-const sortingBooks = books.sort((a, b)=>{
+const sortingBooks = books.sort((a, b) => {
     return a.rating - b.rating;
 })
 
 console.log(sortingBooks);
 
-// Reducing method == some values with a callback . it will sum all together in one 
-const numberRed = [2,3,4,5,6];
-const redRudceSum = numberRed.reduce((total , currentVa) =>{
+// Reducing method == some values with a callback . it will sum all together in one
+const numberRed = [
+    2,
+    3,
+    4,
+    5,
+    6
+];
+const redRudceSum = numberRed.reduce((total, currentVa) => {
     return total + currentVa;
 })
 
-const redRudceDiv = numberRed.reduce((total , currentVa) =>{
+const redRudceDiv = numberRed.reduce((total, currentVa) => {
     return total / currentVa;
 })
 
 // Using reduce method for returing the max and min val
-const grades  = [87,65,67,35,98,99,100,34];
-const maxiGrade = grades.reduce((max, currVal)=>{
-    if(currVal > max) return currVal;
-        return max;
+const grades = [
+    87,
+    65,
+    67,
+    35,
+    98,
+    99,
+    100,
+    34
+];
+const maxiGrade = grades.reduce((max, currVal) => {
+    if (currVal > max) 
+        return currVal;
+    
+    return max;
 })
 
 
 // Using the default math.min && Math.max function with reduce
-const maxGrade = grades.reduce((max, currVal)=>{
+const maxGrade = grades.reduce((max, currVal) => {
     return Math.max(max, currVal);
 })
 
-const minGrade = grades.reduce((min, currVal)=>{
+const minGrade = grades.reduce((min, currVal) => {
     return Math.min(min, currVal);
 })
 
-// Inital Value 
+// Inital Value Tally Results
+const votes = [
+    'y',
+    'y',
+    'y',
+    'y',
+    'y',
+    'y',
+    'n',
+    'n',
+    'n',
+    'n'
+];
+const tallyVotes = votes.reduce((tally, val) => {
+    if (tally[val]) {
+        tally[val]++
+    }else{
+        tally[val] = 1;
+    }
+    return tally;
+}, {})
+
+

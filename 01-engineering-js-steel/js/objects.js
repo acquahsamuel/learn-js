@@ -85,7 +85,7 @@ const users = {
 }
 
 // Evaluate either ture or false
-if (! users.notification.length) {
+if (!users.notification.length) {
     console.log('No new notification')
 } else {
     console.log('You have new message')

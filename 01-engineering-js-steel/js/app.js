@@ -45,7 +45,6 @@ Switch Javascript
 
 */
 
-
 (5 > 4) ? console.log("True") : console.log("False");
 
 let status = 'offline'

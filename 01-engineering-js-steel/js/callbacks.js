@@ -182,7 +182,7 @@ const results = books.filter(book => {
 });
 
 
-// Every return a boolean and everyone must be true
+// Every function return a boolean and everyone of the element must be true
 const wordsLetter = [
     'dog',
     'dig',
@@ -233,7 +233,8 @@ const sortingBooks = books.sort((a, b) => {
 
 console.log(sortingBooks);
 
-// Reducing method == some values with a callback . it will sum all together in one
+/* Reducing method == some values with a callback . it will sum all together in one
+*/
 const numberRed = [
     2,
     3,
@@ -293,10 +294,8 @@ const votes = [
 const tallyVotes = votes.reduce((tally, val) => {
     if (tally[val]) {
         tally[val]++
-    }else{
+    } else {
         tally[val] = 1;
     }
     return tally;
 }, {})
-
-

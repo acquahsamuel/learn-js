@@ -21,20 +21,23 @@ const greet = (person, greeting = 'Good day') =>{
 let str = "Please locate where 'locate' occurs!";
 let pos = str.search("locate");
 
-// Slicing extracts a part of a string and returns the extracted part in a new string
+// Using the rest , spread and array destructing 
 
-let lstVa = str[str.length -1];
+// Array destructing
+const raceResult = [
+    'Eliud Kipchoge',
+    'Feyisa Lelisa',
+    'Galen Rupp',
+    'Ghirmay Ghebreslassie',
+    'Alphonce Simbu',
+    'Jared Ward'
+];
+
+const  [silver , gold , bronze ] = raceResult;
+const  [firstv ,  , , fourth] = raceResult;
+const  [firster, ...others] = raceResult;
 
 
-let newStrr = str.slice(7);
-console.log(newStrr);
 
 
 
-var txt = "";
-var numbersSt = [45, 4, 9, 16, 25];
-numbersSt.forEach(myFunction);
-
-function myFunction(value, index, array) {
-    txt = txt + value + "<br>";
-}

@@ -41,8 +41,7 @@ if (password1 >= 6) {
 
 
 /*
-Switch Javascript
-
+Switch Javascript Tenary operator 
 */
 
 (5 > 4) ? console.log("True") : console.log("False");

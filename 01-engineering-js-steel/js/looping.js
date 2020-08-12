@@ -17,9 +17,7 @@ for (let i = 200; i >= 0; i -= 25) {
 console.log('Infinite Loop must be avioded');
 
 // const animals = ['lions' ,'tiger', 'bears'];
-for (let j = 0; j < newMusic.length; j++) {
-    console.log(newMusic[j]);
-}
+
 
 const myStudent = [
     {

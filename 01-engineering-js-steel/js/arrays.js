@@ -11,7 +11,6 @@ const array2 = ['e', 'f', 'g', 'h'];
 
 let myString = 'Becoming a dangerous js engineer';
 
-
 let shoppingList = ['ceral', 'cheese', 'ice'];
 let topSong = ['Fist Time Ever I saw Your Face', 'God only knows', 'A day in the Life', 'Life on Mars'];
 let newMusic = ['Theophilus Sunday', 'Hit man the jack', 'Amakye Dede song', 'Freedom by code'];
@@ -112,13 +111,26 @@ ingredient.indexOf('flour');
 ingredient.reverse();
 
 
-// join = create a string from arr
+/* join = create a string from arr (deal with seperators )
+   when used on  a number converts them to string 
+   Default join() seperator is (comma ) ,
+*/
+letters.join(" * ");
 
 
-// slice = copy portion of an arr
+
+/* slice = copy portion of an arr 
+   Take portion of an array and makes new array with it 
+   Does not modify the original array
+   can copy parts too
+*/
+let newtopSongsSlice = topSong.slice();
+
 
 
 // splice = remove/replace elements in an array
+
+
 
 // sort =
 

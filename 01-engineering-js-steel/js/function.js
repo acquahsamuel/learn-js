@@ -53,3 +53,27 @@ function returnStopIt(name , years){
     return  `${name} ${years} `;
     console.log('Hello world');
 }
+
+function containsPurple(arr){
+  for(let singleArr of arr){
+      if(singleArr === 'purple' || singleArr === 'magneta'){
+          return true;
+      }
+  }
+  return false;
+}
+
+
+// Challenges With function 
+function isValidPassword(password , username){
+   const passwordLength = password.length < 8;
+   const passwrodNoSpace = password.indexOf(' ') !== -1
+   const passwordCheck = password.indexOf(username) !== -1;
+
+    if(passwordLength || passwrodNoSpace || passwordCheck){
+         return false;
+    }else{
+        return false;
+    }
+
+}

@@ -104,7 +104,9 @@ shoppingList.includes('string')
 ingredient.includes('water', 1)
 // can pass in a starting index
 
-// IndexOf = just like str.indexOf (indexOf the value eg. 1 , 2, 3, 4)
+/* IndexOf = just like str.indexOf (indexOf the value eg. 1 , 2, 3, 4)
+   Search for a string 
+*/
 ingredient.indexOf('water')
 ingredient.indexOf('flour')
 

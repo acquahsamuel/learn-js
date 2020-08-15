@@ -35,7 +35,6 @@ addingClass.classList.add('success')
 addingClass.classList.remove('error')
 
 
-
 var str = "Please locate where 'locate' occurs!";
 var pos = str.indexOf("locate");
 

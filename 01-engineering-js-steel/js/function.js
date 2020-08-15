@@ -42,3 +42,14 @@ function divide(a , b){
 }
 
 
+/* using return along with function
+   Return ends function execution where you calls it
+*/
+function multi(x , y){
+    return x * y;
+}
+
+function returnStopIt(name , years){
+    return  `${name} ${years} `;
+    console.log('Hello world');
+}

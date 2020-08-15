@@ -67,6 +67,13 @@ let ingredient = [
     'butter'
 ];
 
+let colors = [
+    ['red' , 'crimson'],
+    ['orange' ,'dark orange'],
+    ['yellow' , 'golden blue'],
+    ['pink' ,'indigo']
+]
+
 
 // Indexing array how do we access them
 shoppingList[1];

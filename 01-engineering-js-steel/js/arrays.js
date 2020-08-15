@@ -9,6 +9,28 @@ let color = status === 'online' ? 'red' : 'blue';
 const array1 = ['a', 'b', 'c', 'd'];
 const array2 = ['e', 'f', 'g', 'h'];
 
+const num1 = [
+    1,
+    2,
+    8,
+    3,
+    7,
+    4,
+    5,
+    6
+];
+const num2 = [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    'a',
+    'b',
+    'c'
+];
+
 let myString = 'Becoming a dangerous js engineer';
 
 let shoppingList = ['ceral', 'cheese', 'ice'];
@@ -118,21 +140,37 @@ ingredient.reverse();
 letters.join(" * ");
 
 
-
 /* slice = copy portion of an arr 
    Take portion of an array and makes new array with it 
    Does not modify the original array
    can copy parts too
+   Slice is alway -1 less than the length 
 */
 let newtopSongsSlice = topSong.slice();
+let sliceAnimal = animals.slice(-3);
 
 
+// splice = remove/replace elements in an array (mostly in the middle of array)
+let spliceAmial = animals.splice(0, 0, 'squirrel'); // Start 0 - remove 0 insert -0
+let spliceAnimal = animals.splice(1, 1, 'removedHere(1)'); // start -1 remove - 1 insert - 1 to removedHere(1)
+let spliceAnimalTwo = animals.splice(1, 3); // start -1 - remove -3 insert 0
+let spliceAnimalAgain = animals.splice(3, 0, 'teal', 'Shark');
 
-// splice = remove/replace elements in an array
 
+// sort = (Usually takes a compare function (does workes well with numbers take note) update the array in place(origninal ))
+const sortNum = num1.sort((a, b) => {
+    return a - b;
+})
 
+// Ascending  order
+const sortAscending = num2.sort((upper, lower) => {
+    return upper - lower;
+})
 
-// sort =
+// Sort Descending order
+const sortDescending = num1.sort((lower, upper) => {
+    return lower - upper;
+})
 
 
 console.log(shoppingList)

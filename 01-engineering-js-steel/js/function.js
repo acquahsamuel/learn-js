@@ -70,10 +70,20 @@ function isValidPassword(password , username){
    const passwrodNoSpace = password.indexOf(' ') !== -1
    const passwordCheck = password.indexOf(username) !== -1;
 
-    if(passwordLength || passwrodNoSpace || passwordCheck){
-         return false;
-    }else{
-        return false;
-    }
+    if(passwordLength || passwrodNoSpace || passwordCheck)  return false;
+    return true;
 
 }
+
+// function average 
+
+function averageNums(arrVal){
+    let total = 0;
+    for(let iVal of arrVal){
+        total += iVal;
+    }
+
+    let res = total / arrVal.length;
+    return res;
+}
+

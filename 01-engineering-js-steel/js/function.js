@@ -185,15 +185,109 @@ function outerFun() {
   inner()
 }
 
+/* Annoymus function 
+
+function divid(x , y){
+  return x  / y ;
+}
+
+function multi(x , y){
+  return x * y;
+}
+
+
+*/
+
 // function express = storing a function  in a variable 
-const divid = function divid(x , y){
+const divid = function(x , y){
   return x  / y ;
 }
 
 divid(2,4);
 
-const mutti = function multi(x , y){
+const mutti = function(x , y){
   return x * y;
 }
 
 mutti(4, 5);
+
+
+// Higher Order function -- passing function as argument into another function 
+function callThreeTimes(){
+  cry()
+  cry()
+  cry()
+
+}
+
+function cry(){
+  console.log('Hello world function expression ');
+}
+
+
+function repeatNTimes(action , num){
+  for(let i = 0; i < num; i++){
+    action()
+  }
+}
+repeatNTimes(cry, 12);
+
+
+
+function pickOne(f1, f2){
+  const pif1 = Math.floor(Math.random() * 10);
+  const pif2 = Math.floor(Math.random() * 10);
+
+  if(pif1 <= 5){
+    f1()
+  }
+
+  if(pif2 >= 6){
+    f2()
+  }
+}
+
+function snig(){
+  console.log('function 1 called');
+}
+
+function sing2(){
+  console.log('function 2 Called');
+}
+
+pickOne(snig, sing2);
+
+
+//Higher Order function 2-  function that return another function 
+function multipyiBy(num){
+  return function(x){
+    return x * num;
+  }
+}
+
+
+const triple = multipyiBy(3);
+const double = multipyiBy(2);
+
+
+// Hoisting with var , let , const
+
+// Hoisting is allowed before initialization in  the case of  var
+console.log(varAnimailHoisting)
+var varAnimailHoisting = 'tiger';
+
+
+// Hoisting not allowed before initialization in the case of const 
+// console.log(constAnimailHoisting);
+// const constAnimailHoisting = 'tiger';
+
+// //Hoisting 
+// console.log(letHoistingAnimal);
+// let letHoistingAnimal = 'tiger';
+
+/* 
+ Hoisting works for normal functions 
+ But not function expressions
+
+*/
+

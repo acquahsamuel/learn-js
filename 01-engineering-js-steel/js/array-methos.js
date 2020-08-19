@@ -215,3 +215,16 @@ const checkRating = books.every(book => book.rating >= 3.5);
 
 const checkSomeStartWithD = words.some(word => word[0] === 'd');
 const anyTwoArthors = books.some(book => book.authors.length === 2);
+
+
+/* 
+ More Sorting on Arrays
+*/
+
+const sortRating =  books.sort((a ,b) => a.ratings - b.ratings )
+console.log(sortRating);
+
+
+/*
+REDUCES METHOD 
+*/

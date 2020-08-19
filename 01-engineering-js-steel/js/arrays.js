@@ -138,7 +138,10 @@ let spliceAnimalAgain = animals.splice(3, 0, 'teal', 'Shark')
 
 
 /*
- sort = (Usually takes a compare function (does workes well with numbers take note) update the array in place(origninal ))
+
+  Mutates the original Array
+  sort = (Usually takes a compare function (does workes well with numbers take note) update the array in place(origninal ))
+ 
 
  if compareFunction(a ,b) return less than 0
   - Sort a before b 
@@ -151,9 +154,14 @@ let spliceAnimalAgain = animals.splice(3, 0, 'teal', 'Shark')
 
  */
 
-
-const sort1 = prices.sort((a , b) => a - b );
-
 const sortNum = num1.sort((a, b) => {
   return a - b
-})
+});
+
+
+const sortNumAsc = prices.sort((a, b) => a - b);
+
+const copyPrices = prices.slice();
+const sortNumDes = copyPrices.sort((a, b) => b - a);
+
+const sortNum2 = num2.sort((a ,b) => a - b)

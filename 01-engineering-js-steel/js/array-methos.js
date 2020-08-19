@@ -221,10 +221,54 @@ const anyTwoArthors = books.some(book => book.authors.length === 2);
  More Sorting on Arrays
 */
 
-const sortRating =  books.sort((a ,b) => a.ratings - b.ratings )
+const sortRating = books.sort((a, b) => a.ratings - b.ratings)
 console.log(sortRating);
 
 
 /*
-REDUCES METHOD 
+ REDUCES METHOD 
+
+  Execute a reducer function on each element of the arrray 
+  on each element of the array
+  
+  Eg. Summing every element in an array [Uses](Accumulator , currentValue)
+
 */
+
+const sumWithReduce = number.reduce((accu, currentVal) => {
+    return accu + currentVal;
+})
+
+const grades = [87, 64, 96, 92, 88, 99, 73, 70, 92];
+
+const maxGradd = grades.reduce((max, currentVal) => {
+    if (currentVal > max) return currentVal;
+    return max;
+})
+
+const maxGrade = grades.reduce((max, currentVal) => {
+    return Math.max(max, currentVal);
+});
+
+const minGrade = grades.reduce((min, currentVal) => {
+    return Math.min(min, currentVal)
+});
+
+
+const sum2 = [10, 20, 30, 40, 40].reduce((sum, currentVal) => {
+    return sum + currentVal;
+}, 10);
+
+
+const votes = ['y', 'y', 'n', 'n' , 'y', 'n', 'y', 'n', 'y', 'y', 'n'];
+const results = votes.reduce((tally, val) => {
+    tally[val] = (tally[val] || 0) + 1;
+    return tally;
+}, {});
+
+const groupedByRatings=  books.reduce((groupedBooks, book) =>{
+    const key = Math.floor(book.rating);
+    if(!groupedBooks[key]) groupedBooks[key] = [];
+    groupedBooks[key].push(book);
+    return groupedBooks;
+}, {})

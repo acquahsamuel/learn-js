@@ -10,6 +10,7 @@ const array2 = ['e', 'f', 'g', 'h']
 
 const num1 = [1, 2, 8, 3, 7, 4, 5, 6]
 const num2 = [2, 3, 4, 5, 6, 7, 'a', 'b', 'c']
+const prices = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
 
 let myString = 'Becoming a dangerous js engineer'
 
@@ -128,25 +129,31 @@ letters.join(' * ')
 let newtopSongsSlice = topSong.slice()
 let sliceAnimal = animals.slice(-3)
 
+
 // splice = remove/replace elements in an array (mostly in the middle of array)
 let spliceAmial = animals.splice(0, 0, 'squirrel') // Start 0 - remove 0 insert -0
 let spliceAnimal = animals.splice(1, 1, 'removedHere(1)') // start -1 remove - 1 insert - 1 to removedHere(1)
 let spliceAnimalTwo = animals.splice(1, 3) // start -1 - remove -3 insert 0
 let spliceAnimalAgain = animals.splice(3, 0, 'teal', 'Shark')
 
-// sort = (Usually takes a compare function (does workes well with numbers take note) update the array in place(origninal ))
+
+/*
+ sort = (Usually takes a compare function (does workes well with numbers take note) update the array in place(origninal ))
+
+ if compareFunction(a ,b) return less than 0
+  - Sort a before b 
+
+  if compareFunction(a , b) return 0
+  - Leave a and b unchanged with respect to each other 
+
+  if compareFunction(a ,b ) return greater than  0
+  - sort b nefore a 
+
+ */
+
+
+const sort1 = prices.sort((a , b) => a - b );
+
 const sortNum = num1.sort((a, b) => {
   return a - b
 })
-
-// Ascending  order
-const sortAscending = num2.sort((upper, lower) => {
-  return upper - lower
-})
-
-// Sort Descending order
-const sortDescending = num1.sort((lower, upper) => {
-  return lower - upper
-})
-
-console.log(shoppingList)

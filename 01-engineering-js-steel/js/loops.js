@@ -40,3 +40,5 @@ for (let i = 0; i < words1.length; i++) {
 	//Access index i of both arrays
 	console.log(`${words1[i]}${words2[i]}`);
 }
+
+

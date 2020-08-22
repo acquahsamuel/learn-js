@@ -31,7 +31,6 @@ Admin.prototype.deleteUser = function(){
     
 }
 
-
 const userOne = new User("James" , "James@gmail.com");
 const userTwo = new User("James" , "JSX@gmail.com");
 const userThree = new User("James" , "allodwd@gmail.com");

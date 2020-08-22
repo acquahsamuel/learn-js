@@ -1,0 +1,124 @@
+
+Lecture Node 
+ Can i use - website 
+ ECMA - website 
+
+ Download google chrome 
+
+ MDN - Mozilla developer network
+ https://developer.mozilla.org/en-US/
+
+
+ Primitive Types 
+ Number =
+ String
+ Boolean 
+ Null 
+ Undefined
+
+ 
+ Other Technical object =  Symbol and BigInt 
+
+ Exponential 2 ** 3 
+ Addition 2 + 4 
+ Subtraction 2 -4 
+ Division  3 / 4 
+
+ Precedence (PEMDAS )
+
+ NaN = Numeric value that represents something that is not a number
+ Eg .  = 0 / 0 
+       = 1 + NaN 
+
+ Infinity = 1 / 0 
+ -Infinity 
+ 
+ Zero  0
+ Negative Zero  -0 
+
+
+Variables Notes 
+
+Syntax : 
+      Correct naming for items 
+      Let someName  = value ;
+
+
+ Updating a Value 
+====================
+age = 3 ;
+
+Updating 
+ age = age + 1 - Adding +1 
+ 
+ score += 1  || score ++ == Same 
+ score -= 2  || score -- == Same
+
+ score /= 3  
+
+
+// let 
+//  Const {Cannot change the value }
+ 
+ Usage 
+
+ const pi 
+ const dayInWeek = 7 
+ minHeightForRide = 60 
+
+
+// No more var (don't use it)
+   Only on old codebase 
+
+
+// Most important properties and methods for DOM
+
+classList
+getAttribute()
+setAttribute()
+appendChild()
+append()
+prepend()
+removeChild()
+remove() 
+createElement 
+
+innerText 
+textContent 
+innerHTML
+
+value 
+parentElement
+children 
+nextSibling
+previousSibling 
+style 
+
+
+
+
+   
+// Tech Stacks 
+Node.js,
+Express,
+WebSockets, MongoDB (Mongoose,
+Irridium, TypeORM),
+CSS3, Bootstrap, HTML5, 
+MySQL (Sequelize, TypeORM), Redis,
+
+
+
+
+Hapi,
+Nest, Angular 4+, 
+AngularJS, Apollo, GraphQL, 
+TypeScript, RxJS,
+Redux (Thunk / Saga / Observable),
+Reselect, Ngrx, JavaScript (ES6/7/8), 
+Socket.io,
+Elasticsearch, Kafka, Nats,
+Lodash, Ramda, Passport, Karma, Jasmine, Jest, 
+Supertest, Mocha, 
+Chai, gRPC, Angular Material, Material UI, Sass, 
+Webpack, Gulp, Grunt, Docker, Kubernetes,
+Swagger. Tools: Asana, GIT, Bitbucket, Slack

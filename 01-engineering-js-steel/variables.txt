@@ -72,22 +72,26 @@ Updating
 
    
 // Tech Stacks 
-
-Node.js, Hapi,
+Node.js,
 Express,
+WebSockets, MongoDB (Mongoose,
+Irridium, TypeORM),
+CSS3, Bootstrap, HTML5, 
+MySQL (Sequelize, TypeORM), Redis,
+
+
+
+
+Hapi,
 Nest, Angular 4+, 
 AngularJS, Apollo, GraphQL, 
 TypeScript, RxJS,
 Redux (Thunk / Saga / Observable),
 Reselect, Ngrx, JavaScript (ES6/7/8), 
 Socket.io,
-WebSockets, MongoDB (Mongoose,
-Irridium, TypeORM), 
-MySQL (Sequelize, TypeORM), Redis,
 Elasticsearch, Kafka, Nats,
 Lodash, Ramda, Passport, Karma, Jasmine, Jest, 
 Supertest, Mocha, 
 Chai, gRPC, Angular Material, Material UI, Sass, 
-CSS3, Bootstrap, HTML5, 
 Webpack, Gulp, Grunt, Docker, Kubernetes,
 Swagger. Tools: Asana, GIT, Bitbucket, Slack

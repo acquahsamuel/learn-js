@@ -1,18 +1,34 @@
-*, *::after, *::before {
-    margin: 0 auto;
-    padding: 0 auto;
-    font-family: 'Roboto Mono', monospace;
+h1 {
+    color: purple;
+    font-size: 60px;
 }
 
-.column{
-    float: left;
-    width: 50%;
-    padding: 10px;
-    /* height: 300px; */
+#bear-photo {
+    width: 250px;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+.special {
+    color: teal;
+    font-size: 30px;
+    border: 1px solid teal;
+}
+
+ul>li {
+    list-style: none;
+}
+
+input[type='password'] {
+    width: 200px;
+    height: 20px;
+    border-radius: 0px;
+}
+
+input[type='text'] {
+    width: 200px;
+    height: 20px;
+    border-radius: 0px;
+}
+
+input[type='password']:focus {
+    border-radius: 0px;
 }

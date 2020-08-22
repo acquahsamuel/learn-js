@@ -21,112 +21,47 @@ const getBrowserHight = document.body.clientHeight;
 const getBrowserWidth = document.body.clientWidth;
 
 setInterval(() =>{
+   for(let el of getAllElement){
     const x =   Math.floor(Math.random() * getBrowserWidth);
     const y =   Math.floor(Math.random() * getBrowserHight);
-    // const rotation = Math.floor(Math.random() * 360); 
-     el.style.transform = `translate(${x}px , ${y}px`;
-   
+    const rotation = Math.floor(Math.random() * 360); 
+     el.style.transform = `translate(${x}px , ${y}px `;
+   }
 }, 2000)
 
 
-// Documents  
+/* 
 
-// Select a single tags {selectName}
-const ul = document.querySelector('');
+ Key things 
+ Html Collections 
 
-// Select multiple tags { .className or #idName }
-const p = document.querySelectorAll('');
+ Array can be iteratrated 
+ Nodelist ()
 
+ Array -like convert it to an array 
+ Html Collection ()
 
-// select element by tagName (p || <h1> </h1>)
-const ol = document.getElementsByTagName('');
+ document.getElementsById
+ document.getElementsByTagName
+ document.getElementsByClssName
 
-// select elements { we don't need the . symbol }
-const li = document.getElementsByClassName('');
-
-// we don't need the # symbol
-const lu = document.getElementById('');
-
-// DOM SELECTION  = Video 46
-// const  para = document.querySelector();
+ Objects = 
+ document.querySelector()
+ document.querySelectorAll()
 
 
-const idThing = document.querySelector('#cooking');
-console.log(idThing);
-
-const para = document.querySelectorAll('p');
-
-para.forEach(paras =>{
-  paras.innerText += 'new text appened';
-});
-// property name
-// method  = ()
-console.log(para.innerText);
+ innerTex and textContent
+ ========================= 
+ Kind of the Act the same 
+ innerText 
+ but textContent show the formatting and the hidden properties on the page
 
 
-const content = document.querySelector('.content');
-content.innerHTML += '<h2> This is text 3 appended </h2>';
-console.log(content.innerHTML);
+ innerHTMl 
+ Return all the html tags along with it 
+ eg. <p> Hello world  </p>
+ 
 
+ */
 
-// Document selection by querySelector
-// This is a single collector
-const el = document.querySelector('#page-title');
-console.log(el);
-
-// This select multiple selector
-// They can be different diffent selectors
-const ell = document.querySelectorAll('p');
-console.log(ell);
-
-// This select element with the name {we don't bring the # sign}
-const byId = document.getElementById('page-title');
-
-//THis select elements by thier class Name 
-const byClassName = document.getElementsByClassName('error');
-
-// This select element by thier Tag Name
-const byTagName = document.getElementsByTagName('p');
-console.log(byTagName);
-console.log(byTagName[1]);
-
-
-
-// DOM Selection
-const ulItem = document.querySelector('ul');
-ulItem.parentElement.style.textAlign = 'center';
-
-
-const button = document.querySelector('button');
-button.classList.add('buttonStyle');
-
-
-console.log(ulItem.children);
-Array.from(ulItem.children).forEach(() =>{
-    ulItem.classList.add();
-});
-
-
-// Event Handling 
-// Event  + CallBack function
-button.addEventListener('click' , () =>{
-   console.log('Hello world ');
-});
-
-
-// Creating EventListener for the Children 
-const item = document.querySelectorAll('li');
-console.log(item);
-
-item.forEach((singleItem) =>{
-    singleItem.addEventListener('click' , (event) =>{
-        // Using the event keyword + target keyword
-        // console.log(event.target);
-
-        // singleItem.style.display = 'none';      
-        event.target.style.textDecoration = 'line-through';
-    })
-});
-
-
-
+ 

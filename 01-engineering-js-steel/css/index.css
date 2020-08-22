@@ -32,3 +32,15 @@ input[type='text'] {
 input[type='password']:focus {
     border-radius: 0px;
 }
+
+.todo{
+    font-size: 30px;
+    color: olive;
+}
+
+.done{
+    color: rgb(175, 33, 33);
+    text-decoration: line-through;
+    opacity: 50%;
+}
+

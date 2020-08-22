@@ -163,6 +163,18 @@ function fullNameWithRest(first, last, ...titles) {
 }
 
 
+function add(...args) {
+    let result = 0;
+
+    for (let arg of args) result += arg;
+
+    return result
+}
+
+add(1) // returns 1
+add(1, 2) // returns 3
+add(1, 2, 3, 4, 5) // returns 15
+
 /*
     Destructiing 
     A short clean syntax to unpack 
@@ -227,4 +239,32 @@ const resultsOfRunning = [{
     },
 ]
 
-const [,{country}] = resultsOfRunning;
+const [, {
+    country
+}] = resultsOfRunning;
+
+// Parameters Destructing 
+const fullName = ({
+    first,
+    last
+}) => {
+    return `${first} ${last}`
+}
+
+const runnerAgain = {
+    first: 'Eluis',
+    last: 'Kipchoge',
+    country: 'Kenya',
+}
+
+fullName(runnerAgain);
+
+const response = [
+    'HTTP/1.1',
+    '200 OK',
+    'application/json',
+]
+
+function parseResponse([protocol, statusCode, contentType]) {
+    console.log(`Status : ${statusCode} protocol : ${protocol}`);
+}

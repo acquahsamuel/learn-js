@@ -1,0 +1,101 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+
+.background {
+    background-color: #1c0441;
+    height: 40vh;
+    position: relative;
+}
+
+.date {
+    font-size: 0.6rem;
+    color: #777;
+}
+
+
+.card-title {
+    color: #1c0441;
+}
+
+
+.card {
+    margin-top: 10vh;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+.form-group .form-control-sm {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: .9px solid #d3d1d4;
+}
+
+.form-group .form-control-sm:focus {
+    border: .9px solid #1c0441;
+    box-shadow: none;
+}
+
+
+.form-group .form-control-sm input {
+    font-weight: 100;
+}
+
+.list-border {
+    background: rgb(245, 243, 243);
+    font-weight: 300 !important;
+}
+
+.list-border:hover {
+    border-left: 2px solid rgb(204, 14, 14) !important;
+    background: rgb(245, 243, 243);
+    box-shadow: 2px 2px 2px 2px rgba(194, 190, 190, 0.2);
+    transform: translate(-10px);
+    -webkit-transform: translate(-10px);
+    -moz-transform: translate(-10px);
+    -ms-transform: translate(-10px);
+    -o-transform: translate(-10px);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.checkbox-right {
+    float: right;
+}
+
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: rgba(3, 11, 37, 0.904);
+    border-color: #4b06b3;
+    background-color: #033c9162;
+    border-radius: 0px;
+}
+
+
+.custom-control-input:checked~.custom-control-label:focus {
+    color: rgba(3, 11, 37, 0.904);
+    border-color: #4b06b3;
+    background-color: #033c9162;
+    border-radius: 0px;
+}
+
+.list-group-flush .list-group-item {
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}

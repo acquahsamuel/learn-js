@@ -54,6 +54,7 @@ body {
 
 .form-control.success input {
     border-color: var(--success-color);
+    background: #fff;
 }
 
 .form-control.error input {
@@ -66,11 +67,12 @@ body {
     left: 0;
     bottom: 0;
     visibility: hidden;
-    transition: all 2s;
 }
 
 .form-control.error small{
     visibility: visible;
+    transition: cubic-bezier(.25,.46,1,-0.03);
+    
 }
 
 .form button{

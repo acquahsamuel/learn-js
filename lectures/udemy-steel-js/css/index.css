@@ -44,3 +44,31 @@ input[type='password']:focus {
     opacity: 50%;
 }
 
+
+.button{
+    width: 80px;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 50px;
+	width: 100px;
+  
+}
+
+#boxes{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+

@@ -95,20 +95,50 @@ previousSibling
 style 
 
 
+Getting Material and Good resources at one place 
+Products for Universities
+Projects 
 
+
+www.jetbrains.com
+React 
+Angular
+Express 
+
+
+Backend developer
+Web developer
+Full Stacks developer
+Mobile developer
+Software developer == build codes that run everywhere
+Software Engineer  == using computer science to solve issues 
+
+
+ =======Work Opportunities ==========
+Entrepreneurship
+Startup 
+Freelance 
+Freelance 
+The Big Tech Companies 
+Ad Agencies 
+Remote Work 
+
+
+GitHub 
+Website 
+1-2 Website 
+Blog 
 
    
+
 // Tech Stacks 
 Node.js,
 Express,
-WebSockets, MongoDB (Mongoose,
-Irridium, TypeORM),
+WebSockets, MongoDB (Mongoose,Irridium, TypeORM),
 CSS3, Bootstrap, HTML5, 
 MySQL (Sequelize, TypeORM), Redis,
 
-
-
-
+ 
 Hapi,
 Nest, Angular 4+, 
 AngularJS, Apollo, GraphQL, 

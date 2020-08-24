@@ -1,0 +1,33 @@
+.error{
+    padding: 10px;
+    border : 1px solid red;
+}
+
+.success{
+    padding: 10px;
+    border : 1px solid green;
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+li{
+    list-style-type: none;
+    max-width: 200px;
+    padding: 8px;
+    margin: 8px auto;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.btn-style{
+  padding: 10px 20px ;  
+  color: white;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+}

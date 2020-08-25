@@ -1,5 +1,4 @@
 // Promose is a method
-
 const willGetYouADogProme = function () {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

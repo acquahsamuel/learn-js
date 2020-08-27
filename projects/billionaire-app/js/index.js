@@ -51,10 +51,12 @@ function calculateWealth() {
 
 // show millionaires 
 function showMillionaires(){
-    const millionaiers = data.filter(millionMoney =>{
-        return millionMoney.money > 999999 ;
+    data = data.filter(user =>{
+        return user.money > 1000000 ;
     })
-    console.log(millionaiers);
+
+    updateDOM();
+    
 }
 
 
@@ -87,5 +89,5 @@ const addUserNew = addUserBtn.addEventListener('click', getRandonUser);
 const doublemonery = doubleBtn.addEventListener('click', doubleMoney);
 const sortRichestPerson = sortBtn.addEventListener('click', sortRichest);
 const calculateWealthB = calculateWealthBtn.addEventListener('click', calculateWealth);
-const showbillionaires = showMillionairesBtn.addEventListener('click', showMillionaires);
+const showbillionaire = showMillionairesBtn.addEventListener('click', showMillionaires);
 

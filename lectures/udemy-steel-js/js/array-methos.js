@@ -125,8 +125,6 @@ const square = n => (n * n);
 const doubles = number.map(n => n * 2);
 const checkOddOrEven = number.map((n) => (n % 2 === 0) ? 'even' : 'odd');
 
-
-
 /*
  FIND METHOD 
  return the value of the first element in the array 

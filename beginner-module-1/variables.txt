@@ -1,0 +1,155 @@
+// STARTING DATE = 26 JULY 2020
+
+Lecture Node 
+ Can i use - website 
+ ECMA - website 
+
+ Download google chrome 
+
+ MDN - Mozilla developer network
+ https://developer.mozilla.org/en-US/
+
+
+ Primitive Types 
+ Number =
+ String
+ Boolean 
+ Null 
+ Undefined
+
+ 
+ Other Technical object =  Symbol and BigInt 
+
+ Exponential 2 ** 3 
+ Addition 2 + 4 
+ Subtraction 2 -4 
+ Division  3 / 4 
+
+ Precedence (PEMDAS )
+
+ NaN = Numeric value that represents something that is not a number
+ Eg .  = 0 / 0 
+       = 1 + NaN 
+
+ Infinity = 1 / 0 
+ -Infinity 
+ 
+ Zero  0
+ Negative Zero  -0 
+
+
+Variables Notes 
+
+Syntax : 
+      Correct naming for items 
+      Let someName  = value ;
+
+
+ Updating a Value 
+====================
+age = 3 ;
+
+Updating 
+ age = age + 1 - Adding +1 
+ 
+ score += 1  || score ++ == Same 
+ score -= 2  || score -- == Same
+
+ score /= 3  
+
+
+// let 
+//  Const {Cannot change the value }
+ 
+ Usage 
+
+ const pi 
+ const dayInWeek = 7 
+ minHeightForRide = 60 
+
+
+// No more var (don't use it)
+   Only on old codebase 
+
+
+// Most important properties and methods for DOM
+
+classList
+getAttribute()
+setAttribute()
+appendChild()
+append()
+prepend()
+removeChild()
+remove() 
+createElement 
+
+innerText 
+textContent 
+innerHTML
+
+value 
+parentElement
+children 
+nextSibling
+previousSibling 
+style 
+
+
+Getting Material and Good resources at one place 
+Products for Universities
+Projects 
+
+
+www.jetbrains.com
+React 
+Angular
+Express 
+
+
+Backend developer
+Web developer
+Full Stacks developer
+Mobile developer
+Software developer == build codes that run everywhere
+Software Engineer  == using computer science to solve issues 
+
+
+ =======Work Opportunities ==========
+Entrepreneurship
+Startup 
+Freelance 
+Freelance 
+The Big Tech Companies 
+Ad Agencies 
+Remote Work 
+
+
+GitHub 
+Website 
+1-2 Website 
+Blog 
+
+   
+
+// Tech Stacks 
+Node.js,
+Express,
+WebSockets, MongoDB (Mongoose,Irridium, TypeORM),
+CSS3, Bootstrap, HTML5, 
+MySQL (Sequelize, TypeORM), Redis,
+
+ 
+Hapi,
+Nest, Angular 4+, 
+AngularJS, Apollo, GraphQL, 
+TypeScript, RxJS,
+Redux (Thunk / Saga / Observable),
+Reselect, Ngrx, JavaScript (ES6/7/8), 
+Socket.io,
+Elasticsearch, Kafka, Nats,
+Lodash, Ramda, Passport, Karma, Jasmine, Jest, 
+Supertest, Mocha, 
+Chai, gRPC, Angular Material, Material UI, Sass, 
+Webpack, Gulp, Grunt, Docker, Kubernetes,
+Swagger. Tools: Asana, GIT, Bitbucket, Slack

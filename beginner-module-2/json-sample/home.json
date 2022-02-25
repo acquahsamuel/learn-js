@@ -1,0 +1,20 @@
+[
+    {
+        "home" : "Accra" ,
+        "age" :   40,
+        "education" : "student"
+        
+    },
+    {
+        "home" : "Kumas" ,
+        "age" :   20,
+        "education" : "Worker"
+        
+    },
+    {
+        "home" : "Ghana" ,
+        "age" :   10,
+        "education" : "finner"
+        
+    }
+]
